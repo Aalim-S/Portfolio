@@ -33,7 +33,7 @@ const scriptURL = 'https://script.google.com/macros/s/AKfycbydB6yip46x_JZwLlNtV7
           msg.innerHTML = 'Message sent successfully';
           setTimeout(function(){
             msg.innerHTML = "";
-          },5000)
+          },3000)
           form.reset();
         })
         .catch(error => console.error('Error!', error.message))
@@ -56,5 +56,15 @@ const scriptURL = 'https://script.google.com/macros/s/AKfycbydB6yip46x_JZwLlNtV7
       navBar.style = 'visibility: hidden; width: 0px; height: 0px; transition: width 0.3s ease, height 0.3s ease;';
 
     });
+
+
+    /* --------------------------- tracking users ------------------------------------ */
+
+    // function trackUsers() {
+      window.addEventListener('scroll', () => {
+        console.log("1 user is scrolling");
+      })
+      console.log(document.body)
+    // }
 
 
